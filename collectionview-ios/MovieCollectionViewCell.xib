@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="collectionview_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="274"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="274"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-PY-bYe">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="274"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="pursuit happiness" translatesAutoresizingMaskIntoConstraints="NO" id="nWo-eL-ElG">
+                                <rect key="frame" x="0.0" y="8" width="200" height="229.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is movie Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwS-Db-e5z">
+                                <rect key="frame" x="8" y="245.5" width="184" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="AwS-Db-e5z" firstAttribute="top" secondItem="nWo-eL-ElG" secondAttribute="bottom" constant="8" id="19f-HY-bBd"/>
+                            <constraint firstAttribute="trailing" secondItem="nWo-eL-ElG" secondAttribute="trailing" id="Gy1-Ol-zkH"/>
+                            <constraint firstAttribute="trailing" secondItem="AwS-Db-e5z" secondAttribute="trailing" constant="8" id="KaJ-au-RCk"/>
+                            <constraint firstItem="AwS-Db-e5z" firstAttribute="leading" secondItem="R3R-PY-bYe" secondAttribute="leading" constant="8" id="pHv-by-dcA"/>
+                            <constraint firstItem="nWo-eL-ElG" firstAttribute="top" secondItem="R3R-PY-bYe" secondAttribute="top" constant="8" id="rD6-Wx-JS9"/>
+                            <constraint firstAttribute="bottom" secondItem="AwS-Db-e5z" secondAttribute="bottom" constant="8" id="x9g-9z-PUk"/>
+                            <constraint firstItem="nWo-eL-ElG" firstAttribute="leading" secondItem="R3R-PY-bYe" secondAttribute="leading" id="xNm-PK-jsd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="R3R-PY-bYe" secondAttribute="bottom" id="8Ug-6m-GQ8"/>
+                <constraint firstItem="R3R-PY-bYe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A8Y-k3-e2S"/>
+                <constraint firstItem="R3R-PY-bYe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MjE-Kb-FQJ"/>
+                <constraint firstAttribute="trailing" secondItem="R3R-PY-bYe" secondAttribute="trailing" id="Xqe-Nt-CmN"/>
+            </constraints>
+            <size key="customSize" width="200" height="274"/>
+            <connections>
+                <outlet property="movieImageView" destination="nWo-eL-ElG" id="bxB-sw-A9m"/>
+                <outlet property="titleLabel" destination="AwS-Db-e5z" id="Vz6-cf-w9q"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="157.36607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pursuit happiness" width="230" height="345"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
